@@ -97,12 +97,12 @@
 
     ![sbom-sign-pet-battle-api](images/sbom-sign-pet-battle-api.png)
 
-5.  Let's verify the signed image with the public key. Make sure you use the right `APP VERSION` for the image. (`1.3.1` in this case)
+5.  Let's verify the signed image with the public key. Make sure you use the right `APP VERSION` for the image. (`1.3.2` in this case)
 
     ```bash
     cd /projects/pet-battle-api
     oc registry login $(oc registry info) --insecure=true
-    cosign tree default-route-openshift-image-registry.<CLUSTER_DOMAIN>/<TEAM_NAME>-test/pet-battle-api:1.3.1 --allow-insecure-registry
+    cosign tree default-route-openshift-image-registry.<CLUSTER_DOMAIN>/<TEAM_NAME>-test/pet-battle-api:1.3.2 --allow-insecure-registry
     ```
 
     The output should be like:
@@ -110,7 +110,7 @@
     <div class="slider" style="background: #f7f7f7">
     <pre><code class="slide">
     <pre><code class="language-bash">
-    📦 Supply Chain Security Related artifacts for an image: default-route-openshift-image-registry.<CLUSTER_DOMAIN>/<TEAM_NAME>-test/pet-battle-api:1.3.1
+    📦 Supply Chain Security Related artifacts for an image: default-route-openshift-image-registry.<CLUSTER_DOMAIN>/<TEAM_NAME>-test/pet-battle-api:1.3.2
     └── 💾 Attestations for an image tag: default-route-openshift-image-registry.apps.cluster-gqz4b.gqz4b.sandbox763.opentlc.com/ateam-test/pet-battle-api:sha256-927e6af9b12a04d49e9d90d914ab4c64364d1028306778b2d56c1cfea30e8e0c.att
       └── 🍒 sha256:04b22f0cb09d322083ebe6f580b4ac4af6889734f0c5ab81a264b2c2397696b2
     └── 📦 SBOMs for an image tag: default-route-openshift-image-registry.apps.cluster-gqz4b.gqz4b.sandbox763.opentlc.com/ateam-test/pet-battle-api:sha256-927e6af9b12a04d49e9d90d914ab4c64364d1028306778b2d56c1cfea30e8e0c.sbom
