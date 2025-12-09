@@ -146,7 +146,7 @@ In this snippet of the pipeline used in this exercise, we define:
     ```
 _Note: If you are seeing PVCs are still in Progressing status on Argo CD, it is because the OpenShift cluster is waiting for the first consumer, a.k.a. the first pipeline run, to create the Persistent Volumes. The sync status will be green after the first run ☘️_
 
-8. Once you have the URL, over on GitLab go to `pet-battle-api > Settings > Integrations` to add the webhook:
+8. Once you have the URL, over on GitLab go to `pet-battle-api > Settings > Webhooks` to add the webhook:
 
     * select `Push Events`, leave the branch empty for now
     * disable `SSL Verification`

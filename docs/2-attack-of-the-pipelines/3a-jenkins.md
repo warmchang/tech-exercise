@@ -62,7 +62,7 @@ git push
     echo "https://$(oc get route jenkins --template='{{ .spec.host }}' -n ${TEAM_NAME}-ci-cd)/multibranch-webhook-trigger/invoke?token=pet-battle"
     ```
 
-    Once you have the URL, over on GitLab go to `pet-battle > Settings > Integrations` to add the webhook:
+    Once you have the URL, over on GitLab go to `pet-battle > Settings > Webhooks` to add the webhook:
     ![gitlab-webhook-trigger-fe.png](./images/gitlab-webhook-trigger-fe.png)
 
 #### Jenkins Pipeline
