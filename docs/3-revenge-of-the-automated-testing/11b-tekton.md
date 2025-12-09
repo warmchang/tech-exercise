@@ -99,10 +99,14 @@
     cd /projects/pet-battle-api
     git commit --allow-empty -m "🩴 test image-scan step 🩴"
     git push
+    ```
 
     🪄 Observe the **pet-battle-api** pipeline running with the **system-testing** task.
 
 
-6. Zalenium also has some cool features, you can show the tests execution both live and via the recording. Just go to the url of your running Zalenium http://zalenium-<TEAM_NAME>-ci-cd.<CLUSTER_DOMAIN>/dashboard to see a recording of the test cases executing. Note - for the live execution of tests it's http://zalenium-<TEAM_NAME>-ci-cd.<CLUSTER_DOMAIN>/grid/admin/live?refresh=5
+6. Zalenium also has some cool features. You can view the test execution both **live** and via **recording**:
+
+    - 📹 **Recordings Dashboard**: `http://zalenium-<TEAM_NAME>-ci-cd.<CLUSTER_DOMAIN>/dashboard`
+    - 🔴 **Live Execution**: `http://zalenium-<TEAM_NAME>-ci-cd.<CLUSTER_DOMAIN>/grid/admin/live?refresh=5`
 
 ![zalenium-dashboard](images/zalenium-dashboard.png)
