@@ -25,7 +25,7 @@
           type: string
       steps:
         - name: system-testing
-          image: registry.redhat.io/rhel9/nodejs-20:9.5
+          image: registry.redhat.io/ubi9/nodejs-22:9.7
           workingDir: $(workspaces.output.path)/$(params.WORK_DIRECTORY)
           script: |
             #!/usr/bin/env bash
@@ -87,7 +87,7 @@
 4. Remember -  if it's not in git, it's not real.
 
     ```bash
-    cd /projects/tech-exercise/tekton
+    cd /projects/tech-exercise
     git add .
     git commit -m  "🥒 ADD - System testing task 🥒"
     git push
