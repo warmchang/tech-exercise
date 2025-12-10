@@ -141,7 +141,7 @@ As a learner, by the end of this exercise I ...
 * can query Prometheus to see metrics
 * can create alerts with PrometheusRule
 * can install Grafana create dashboards with it
-* can create search index in Kibana
+* can visualize Logs in the OCP Web Console
 
 
 
@@ -160,7 +160,7 @@ _In this exercise, we will use **Prometheus** to gather Pet Battle metrics and *
 
 _We will create **Alerts** to be notified about Pet Battle events (based on SLI/SLO definitions)_
 
-_We will use **Fluentd** to collect logs, **ElasticSearch** to store them and **Kibana** to query the logs_
+_We will use **Vector** to collect logs, **Loki** to store them and **OpenShift Console** to query the logs_
 
 
 
