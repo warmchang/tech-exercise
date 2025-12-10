@@ -141,7 +141,7 @@ As a learner, by the end of this exercise I ...
 * can query Prometheus to see metrics
 * can create alerts with PrometheusRule
 * can install Grafana create dashboards with it
-* can visualize Logs in the OCP Web Console
+* can visualize Logs in the OpenShift Web Console
 
 
 
